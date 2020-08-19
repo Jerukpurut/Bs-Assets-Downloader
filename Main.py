@@ -43,7 +43,7 @@ if __name__ == '__main__':
         sys.stdout.write("\x1b]2;Starting download\x07")
 
     s = socket.socket()
-    s.connect(('game.brawlstarsgame.com', 9339))
+    s.connect(('stage.brawlstarsgame.com', 9339))
     s.send(Write(PreAuth))
 
     header = s.recv(7)
